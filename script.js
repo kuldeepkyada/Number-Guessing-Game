@@ -15,9 +15,11 @@ document.addEventListener('DOMContentLoaded', () =>{
         }
         else if (userGuess > random) {
             result.textContent = "Your guess is too high!"
+            guessInput.value = ""
         }
         else{
             result.textContent = "Your guess is too low!"
+             guessInput.value = ""
         }
 
         if (userGuess == random){
